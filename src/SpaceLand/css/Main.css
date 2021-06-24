@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    opacity: 0;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 25px
+}
+
+::-webkit-scrollbar-thumb {
+  background:#600481;
+  border-radius: 25px
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BB00FF; 
+}
+
+::selection {
+    background-color: #bb00ffc4;
+    color: #fff;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+.head-ad {
+    padding: 5rem 0 0 10rem
+}
+
+.adding-anim {
+    position: fixed;
+    font-size: 20px;
+    font-weight: bold;
+    top: 5%;
+    right: 5%;
+    color: #600481;
+}
+
+.planets {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top:30px
+}
+
+.planet {
+    padding: 15px 25px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    transform: scale(0.85)
+}
+
+.planet:nth-last-child(1) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+
+.planet-image {
+    width: 250px;
+}
+
+#slp {
+    color:#600481;
+    text-align: center;
+    font-weight: 800;
+    padding: 30px 0;
+}
+
+
+.planet-name {
+    font-size: 30px;
+    line-height: 50px;
+    color: #600481
+}
+
+.planet p {
+    font-size: 18px;
+    line-height: 25px
+}
+
+.planet strong {
+    color: #600481
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 1.3rem;
+}
+
+.services-qs {
+    max-width: 50%;
+    margin-right: 50px;
+    padding-left: 20px ;
+}
+
+.ques2 {
+    margin-top: 25px;
+}
+
+.ques {
+    padding-bottom: 20px;
+    color:#600481
+}
+
+.ques:nth-last-child(2){
+    margin-top: 25px 
+}
+
+.stages {
+    max-width: 50%;
+    position: relative;
+    counter-reset: my-counter;
+    padding-right: 20px;
+}
+
+.stage-item {
+    counter-increment: my-counter;
+    list-style: none;
+    border: solid 1px #dadada;
+    margin-bottom: 25px;
+    padding: 15px 12px 15px 80px 
+}
+
+
+.stage-item::before {
+    content: "0" counter(my-counter);
+    position: absolute;
+    left:13px;
+    font-weight: bold;
+    transform: rotate(-90deg);
+    font-size: 39px;
+    color: #600481 !important;
+    margin-top: 20px
+}
+
+.stage-text {
+    line-height: 20px;
+}
+
+.stage-title {
+    color:#600481;
+    margin-bottom: 20px
+}
+
+.service-btn-w {
+    width: 100%;
+    margin: 30px 0
+}
+
+.service-btn {
+    padding: 8px 15px;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 25px 0;
+    background-color: #600481;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, padding-left 0.3s ease, font-weight 0.3s ease
+}
+
+.service-btn:hover {
+    background-color:#FAFAFA;
+    color:#600481;
+    padding-left: 40px;
+    border-left: #600481 3px solid;
+    font-weight: bold;
+}
+
+#st {
+    color:#600481;
+    text-align: center;
+    font-weight: 800;
+    margin: 40px 0;
+}
+
+.about_us {
+    margin-top: 40px ; 
+    display: flex;
+}
+
+.about-img {
+    max-width: 30%;
+    max-height: 1000px;
+    flex-grow: 1;
+    padding-left: 20px
+}
+
+.abouts {
+    font-size: 15px;
+    margin-left: 80px;
+    align-self: center;
+    padding-right: 20px 
+}
+
+.reason_choose {
+    margin-left: 150px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #600481;
+}
+
+.about_num {
+    font-size: 23px;
+    color: #bb00ff
+}
+
+.about_info {
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #bb00ff
+}
+
+.ab-container {
+    max-width: 100%;
+    padding: 0px 180px 20px 150px;
+    margin-bottom: 15px;
+    background-color: #600481;
+    color: #fff;
+    line-height: 17px
+}
+
+.about {
+    padding-top: 20px
+}
+
+.link-cont {
+    margin-top: 20px
+}
+
+.contact_form {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 30px 0;
+}
+
+.form {
+    height: 400px;
+    flex-grow: 1;
+    max-width: 50%;
+    background: #600481;
+    color: #fff;
+    font-size: 17px;
+    padding-top: 45px;
+    text-align: center;
+    margin-right: 20px 
+}
+
+.form-inputs {
+    display: block;
+    margin: 0 auto;
+}
+
+.contacts {
+    height: 400px;
+    max-width: 50%;
+    flex-grow: 1;
+    font-size: 17px;
+    padding: 20px 0;
+    font-weight: 600;
+    padding: 20px 20px;
+    margin-left: 20px 
+}
+
+.contact-address {
+    padding: 15px 0
+}
+
+.contact-title, .contact-main-title {
+    color: #600481;
+}
+
+.form-main-title {
+    color: #fff;
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 30px
+}
+
+.form-inputs {
+    padding: 20px 60px;
+    margin-bottom: 15px;
+    background-color: #600481;
+    border: #bb00ff solid 1px;
+    color: white;
+    font-size: 17px;
+}
+
+.form code {
+    display: block;
+    font-size: 11px;
+    max-width: 303px;
+    margin: 0 auto;
+    text-align: left
+}
+
+.form-inputs:focus {
+    outline: #fff solid 1px;
+    caret-color: #fff;
+}
+
+.form-inputs::placeholder {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px
+}
+
+.form-btn {
+    margin-top: 15px;
+    padding: 10px 40px;
+    font-size: 15px;
+    background-color: #bb00ff;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s ease
+}
+
+.form-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 8px -6px #bb00ff ;
+    color: #fff;
+    font-weight: 600;
+}
+
+.form-btn:active {
+    transform: translateY(0);
+    /* transform: scale(0.99); */
+    box-shadow: none
+}
+  
+@media (max-width: 900px) {
+    .planets {
+        padding-top: 0;
+        transform: scale(0.8)
+    }
+    #slp {
+        font-size: 30px;
+        padding: 30px 0 0 0 ;
+    }
+    .about_us {
+        justify-content: center;
+        text-align: center
+    }
+
+    .abouts {
+        margin-left: 20px;
+    }
+
+    .ab-container {
+    display: block;
+    padding: 10px 60px;
+    margin-bottom: 15px;
+}
+
+    .about:nth-last-child(1) {
+        padding-bottom: 20px
+    }
+    
+    .reason_choose {   
+        margin-left: 0px;
+        text-align: center
+    }
+
+    .about-img {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .container {
+        border-radius: 0px;
+    }
+
+    .planets {
+        flex-direction: column;
+        margin-top: -66px;
+    }
+    .planet:nth-child(1){
+        margin: 0
+    }
+    .planet {
+        transform: scale(1.2);
+        margin-top: 70px
+    }
+    .planet:nth-of-type(2) {
+        margin-top: 90px;
+        transform: scale(1.2) !important
+    }
+    #slp {
+        margin: 50px 0 0 0
+    }
+    .buy-btn:hover{
+    background-color: #600481;
+    color: white
+    }
+    .buy-btn{
+    background-color: #fff;
+    color: #92226f
+    }
+
+    .services {
+         flex-direction: column;
+    }
+
+    .services-qs {
+        max-width: 100%;
+        margin-right: 20px;
+        padding-left: 20px 
+    }
+
+    #slp {
+        margin-top: 0
+    }
+    
+    .stages {
+        max-width: 100%;
+        margin-left: 20px
+    }
+
+    .contact_form {
+        flex-direction: column;
+        margin: 0 0 30px 0;
+
+    }
+    .contacts {
+        max-width: 100%;
+        margin-top: 0; 
+    }
+    .form {
+        max-width: 100%;
+        margin-left: 20px
+    }
+}
+
+
+
+

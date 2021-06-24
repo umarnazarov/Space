@@ -1,0 +1,245 @@
+.signIn-container {
+    display: flex;
+}
+
+.img-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(125,0,182);
+    background: linear-gradient(0deg, rgba(125,0,182,1) 0%, rgba(63,4,71,1) 100%);
+    flex-basis: 70%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.signIn-greet-man {
+    transform: scale(0.85);
+    opacity: 0;
+    animation: signIn-greet-man .7s ease-in forwards
+}
+
+@keyframes signIn-greet-man {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.signIn-greeting {
+    margin-top: 60px
+}
+
+.greet-text, .greet-parg {
+    color: white;
+    text-align: center;
+}
+
+.greet-text {
+    opacity: 0;
+    animation: greet-text .7s .4s ease forwards
+}
+
+@keyframes greet-text {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.greet-parg {
+    opacity: 0;
+    margin-top: 15px;
+    font-size: 18px;
+    animation: greet-parg .7s .7s ease forwards
+}
+
+@keyframes greet-parg{
+   0% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.signin-links {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    opacity: 0;
+    animation: signin-links .7s ease forwards
+}
+
+@keyframes signin-links {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.link-ul:nth-child(1){
+    margin-top: 0;
+}
+
+.link-ul {
+    list-style: none;
+    margin: 15px 0;
+    font-weight: bold
+
+}
+
+.non-active-link {
+    color: white;
+    background-color: inherit;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.active-link {
+    background-color: white;
+    color: #5F1B6E;
+    border-radius: 8px 0 0 8px;
+    padding: 10px 20px ;
+    text-decoration: none;
+}
+
+.signIn-main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    justify-content: center;
+    margin: 0 40px;
+    opacity: 0;
+    animation: signIn-main .7s .35s ease forwards
+}
+
+@keyframes signIn-main {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.signIn-main-text {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #600481
+}
+
+.signIn-main-form {
+    display: flex;
+    flex-direction: column
+}
+
+.sign-In-input {
+    padding: 10px 20px;
+    margin: 10px 0px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: solid gainsboro 1px
+}
+
+.sign-In-input:focus {
+    outline: none;
+    border: solid #5F1B6E 1px
+}
+
+label {
+    color: #5F1B6E
+}
+
+.signIn-button {
+    margin: 10px 0px;
+    padding: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    background-color: #600481;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500
+}
+
+.signIn-button:hover {
+    background-color: #9650B9;
+}
+
+
+.go-back {
+    text-align: left;
+    margin-top: 20px
+}
+
+.go-back-nav {
+    text-decoration: none;
+    color: #5F1B6E
+}
+
+.go-back-nav:hover {
+    color: #9650B9;
+}
+
+.auth-info {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold
+}
+
+#sign-redirect{ 
+    text-decoration: none;
+    margin-left: 5px;
+    font-weight: bold
+}
+
+#sign-redirect:active{ 
+    color: #35215E
+}
+
+#auth-error {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 15px
+}
+
+@media (max-width: 1025px) {
+    .img-part {
+        flex-basis: 50%
+    }
+    .signIn-main {
+        flex-basis: 50%
+    }
+    .signIn-greet-man {
+        transform: scale(0.7) translate(-60px, -60px)
+    }
+    .signIn-greeting {
+        margin-top: 100px
+    }
+}
+
+@media (max-width: 860px) {
+    .img-part {
+        display: none
+    }
+    .signIn-container {
+        height: 100vh;  
+    }
+    .signIn-main {
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0
+    }
+}

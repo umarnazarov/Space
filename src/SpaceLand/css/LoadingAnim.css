@@ -1,0 +1,15 @@
+.load-circle {
+    margin: 0 auto;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border-top: gainsboro solid 2px;
+    border-left: white solid 2px;
+    animation: load-circle .3s infinite ease-out
+}
+
+@keyframes load-circle {
+    0% {
+        transform: rotate(-360deg)
+    }
+}

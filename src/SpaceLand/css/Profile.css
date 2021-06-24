@@ -1,0 +1,352 @@
+.user-content {
+    display: flex;
+    min-height: 100%
+}
+
+.user-nav {
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    margin-top: 10px;
+    animation: user-nav .3s ease-in
+}
+
+@keyframes user-nav {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.user-nav-link {
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #7B00B1
+}
+
+.user-nav-link:hover, .user-nav-link:active, .user-out:hover, .user-upd:hover {
+    color: #41044A
+}
+
+.user-interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 60%;
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: user-card .3s .2s ease-in forwards;
+}
+
+.user-upd input[type = 'file'] {
+    display: none;
+}
+
+.user-upd {
+    cursor: pointer;
+}
+
+@keyframes user-card {
+    100% {
+        opacity: 1;
+    }
+}
+
+.user-card h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #7B00B1;
+    margin: 5px
+}
+
+.user-card label {
+    margin: 10px 0;
+    color: #7B00B1;
+    font-weight: bold;
+}
+
+.user-out {
+    font-size: 16px;
+    color: #7B00B1;
+    border: none;
+    font-weight: bold;
+    transition: .2s ease-in;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.fa-sign-out, .fa-cloud-upload {
+    padding-right: 5px
+}
+
+.user-card code {
+    color: #7B00B2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px;
+    margin-bottom: 20px
+}
+
+.user-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: #a300ee 3px solid;
+    object-fit: cover;
+}
+
+.user-n {
+    position: relative;
+    width: 200px;
+    bottom: 20px;
+    text-align: center;
+    background-color: #7B00B1;
+    color: white;
+    margin: 3px;
+}
+
+.fa-pen {
+    font-size: 18px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    cursor: pointer;
+}
+
+.change-form {
+    position: relative;
+}
+
+.user-b {
+    position: relative;
+    width: 200px;
+    bottom: 20px;
+    text-align: center;
+    background-color: #FAFAFA;
+    color: #A301EE;
+    margin: 3px;
+    outline: none;
+    border: 3px solid #A301EE;
+    padding: 2px 0;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.btn-con {
+    position: absolute;
+    top: 22px;
+    left: 3px;
+    width: 97%;
+}
+
+.change-btn {
+    width: 48%;
+    margin: 0 2px;
+    border: none;
+    padding: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background: #7901AE;
+    cursor: pointer;
+}
+
+.fa-folder-open {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+
+.user-data:hover .fa-folder-open {
+    opacity: 1;
+}
+
+.user-basket {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-basis: 40%;
+    background: rgb(125,0,182);
+    background: linear-gradient(0deg, rgba(125,0,182,1) 0%, rgba(63,4,71,1) 100%);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.user-basket-main {
+    height: 100%;
+    margin: 0 60px
+}
+
+.user-basket-main h1 {
+    color: white;
+    font-weight: 400;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.fa-shopping-bag {
+    color: white;
+    
+}
+
+.ticket-image-basket {
+    width:120px;
+    height: 120px;
+    margin: 15px
+}
+
+.ticket-info-basket {
+    color: #fff;
+    flex-grow: 2;
+    text-align: center;
+    margin: auto
+}
+
+.fa-times-circle {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px
+}
+
+.fa-times-circle:hover {
+    color: rgb(235, 72, 72)
+}
+
+.theTicket-basket {
+    position: relative;
+    display: flex;
+    margin: 15px 10px;
+    flex-grow: 2px;
+    width: 360px;
+    border-radius: 10px;
+    background-color: #fafafa38
+}
+
+
+.inf-text {
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+}
+
+.inf-link {
+    display: block;
+    color: #da8aff;
+    text-align: center;
+    margin-top: 10px
+}
+
+.user-basket span {
+    color: white;
+    font-size: 15px;
+}
+
+.user-card a {
+    display: none
+}
+
+#total-price {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center
+}
+
+#delete-progress {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    color: red 
+}
+
+.payment-icons {
+    width: 100%;
+    text-align: center;
+}
+
+.payment-icon {
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+    font-size: 40px;
+    cursor:not-allowed;
+    margin-left: 15px
+}
+
+.payment-icon:nth-child(1) {
+    margin-left: 0
+}
+
+@media (max-width: 1020px) {
+    .user-content {
+        flex-direction: column;
+    }
+    .user-interface {
+        height: 100vh;
+        flex-basis: 100vh
+    }
+    .user-card {
+        margin: 100px 40px
+    }
+    .user-nav {
+        width: 100%;
+    }
+    .user-basket {
+        overflow-x: hidden;
+        flex-grow: 2;
+        flex-basis: 100vh
+
+    }
+    .theTicket-basket {
+        width: 330px;
+    }
+    .user-card a {
+        display: inline;
+        color: #7B00B1;
+        margin-bottom: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 10px
+    }
+
+    .user-upd {
+        font-size: 18px;
+    }
+
+    .user-out {
+        font-size: 18px;
+        margin-left: 10px
+    }
+
+    .user-card .fa-shopping-bag {
+        color: #7B00B1;
+    }
+}

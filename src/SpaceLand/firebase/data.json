@@ -1,0 +1,65 @@
+{"data": [
+    {
+        "destination": "Mars",
+        "image": "../css/ticketImages/mars.png",
+        "price": 899.999,
+        "rating": 5,
+        "comments": [],
+        "orders": 100,
+        "population": 324.468
+    },
+    {
+        "destination": "Jupiter",
+        "image": "../css/ticketImages/jupiter.png",
+        "price": 899.999,
+        "rating": 5,
+        "comments": [],
+        "orders": 100,
+        "population": 324.468
+    },
+    {
+        "destination": "Saturn",
+        "image": "../css/ticketImages/saturn.png",
+        "price": 899.999,
+        "rating": 5,
+        "comments": [],
+        "orders": 100,
+        "population": 324.468
+    },
+    {
+        "destination": "Earth",
+        "image": "../css/ticketImages/earth.png",
+        "price": 899.999,
+        "rating": 5,
+        "comments": [],
+        "orders": 100,
+        "population": 324.468
+    },
+    {
+        "destination": "Uranus",
+        "image": "../css/ticketImages/uranus.png",
+        "price": 899.999,
+        "rating": 5,
+        "comments": [],
+        "orders": 100,
+        "population": 324.468
+    },
+    {
+        "destination": "Venus",
+        "image": "../css/ticketImages/venus.png",
+        "price": 899.999,
+        "rating": 5,
+        "comments": [],
+        "orders": 100,
+        "population": 324.468
+    },
+    {
+        "destination": "Neptune",
+        "image": "../css/neptune.png",
+        "price": 899.999,
+        "rating": 5,
+        "comments": [],
+        "category": "ticket",
+        "population": 324.468
+    }
+]}

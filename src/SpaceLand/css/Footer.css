@@ -1,0 +1,43 @@
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: #600481;
+    color: #fff;
+}
+
+.im {
+    font-weight: bold;
+    color: white;
+    text-decoration: none
+}
+
+.footer-content {
+    display: flex;
+    max-width: 980px;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px
+}
+
+.footer-icons {
+    padding: 0;
+    font-size: 28px;
+}
+
+.footer-fa {
+    margin-left: 20px;
+    transition: 0.5s ease
+}
+
+
+
+.footer-icon {
+    font-style: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+  

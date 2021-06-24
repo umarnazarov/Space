@@ -1,0 +1,381 @@
+#store-video {
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.store-header {
+    height: 75vh;
+    background: rgb(125,0,182);
+    background: -moz-linear-gradient(0deg, rgba(125,0,182,1) 0%, rgba(49,0,56,1) 80%);
+    background: -webkit-linear-gradient(0deg, rgba(125,0,182,1) 0%, rgba(49,0,56,1) 80%);
+    background: linear-gradient(0deg, rgba(125,0,182,1) 0%, rgba(49,0,56,1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d00b6",endColorstr="#310038",GradientType=1);}
+
+.store-nav-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #310038;
+    width: 100%;
+    height: 60px;
+}
+
+.store-nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: store-nav 1s .4s forwards;
+    background-color: #310038
+}
+
+.store-nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    transform: translateY(20px);
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.nav-left {
+    display: flex;
+}
+
+.store-nav-link {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+
+.store-auth-link {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px
+}
+
+.store-header-container {
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    transform: translateY(120px)
+}
+
+.store-header-content {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.store-header-text {
+    position: relative;
+    flex-grow: 1;
+    text-align: right;
+    opacity: 0;
+    animation: store-header-text .5s .7s ease-in forwards
+}
+
+@keyframes store-header-text {
+    100% {
+        opacity: 1;
+    }
+}
+
+#stars {
+        position: absolute;
+    z-index: -1;
+    width: 530px;
+    height: 530px;
+    top: -40%;
+    right: -13%;
+}
+
+
+.store-header-text h1{
+    color: white;;
+    font-size: 60px;
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -1px;
+    line-height: 50px
+}
+
+
+#avail {
+    color: #DF00FF
+}
+
+.store-header-text p{
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px
+}
+
+.store-header-text button:hover {
+    background-color: #fbe1ff;
+}
+
+.store-header-video {
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    animation: store-header-video .5s 1s ease-in forwards 
+}
+
+@keyframes store-header-video {
+    100% {
+        opacity: 1;
+    }
+}
+
+.store-header-video video{
+    position: relative;
+    width: 100%;
+    border-radius: 3%
+}
+
+.video-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    left: 50%;
+    outline: none;
+    border: none;
+    transform: translate(-50%, -50%);
+}
+
+.fa-play {
+    cursor: pointer;
+    color: #7800AD;
+    background-color: black;
+    font-size: 80px
+}
+
+
+.store-main-container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+@keyframes store-nav {
+    100% {
+        opacity: 1;
+    }
+}
+
+.store-nav-link:nth-child(1) {
+    margin-right: 40px
+}
+
+.store-auth-link:nth-child(2) {
+    border: 2px solid white;
+    padding: 5px 10px;
+    transition: .3s ease-out
+}
+
+.store-auth-link:nth-child(2):hover {
+    background-color: white;
+    color: inherit
+}
+
+
+#tickets-text {
+    margin: 30px;
+    color: #5F0381;
+    text-align: center
+}
+
+.store-content {
+    margin: 20px;
+}
+
+.tickets-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.theTicket {
+    position: relative;
+    display: flex;
+    margin: 10px 10px;
+    flex-grow: 2px;
+    width: 390px;
+    border: solid 1px gainsboro;
+    border-radius: 10px
+}
+
+.ticket-image {
+    width: 160px;
+    height: 160px;
+    margin: 10px
+}
+
+.ticket-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.st-btn {
+    padding: 4px 7px;
+    background: #600481;
+    text-decoration: none;
+    margin-top: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.ticket-info h2 {
+    color: #5F0381
+}
+
+
+.fa-cart-plus {
+    font-size: 18px;
+    cursor: pointer;
+    transition: .5s
+}
+
+.ticket-info button {
+    border: none;
+    background-color: #5F0381;
+    color: #fff;
+    margin: 5px;
+    padding: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #600481;
+    transition: .2s ease-in
+}
+
+.ticket-info button:hover, .st-btn:hover {
+    color: #600481;
+    background-color: inherit;
+}
+
+.store-icons {
+    color: white;
+    font-size: 35px;
+    margin-top: 10px
+}
+
+.store-icon {
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .4s
+}
+
+.fa-facebook-square:hover {
+    color: rgb(64, 64, 255);
+}
+
+.fa-twitter-square:hover {
+    color: rgb(74, 198, 255);
+}
+
+@media (max-width: 900px) {
+    .store-nav-link:nth-child(1) {
+        font-size: 18px
+    }
+    .links {
+        display: none;
+    }
+    .store-main-text {
+        font-size: 60px
+    }
+    .store-main-info {
+        font-size: 20px
+    }
+    #store-btn {
+        padding: 7.5px 15px;
+        font-size: 15px
+    }
+}
+
+@media (max-width: 1000px) {
+    #tickets-text {
+        text-align: center;
+        margin: 20px
+    }
+    .theTicket {
+        flex-direction: column;
+        width: 320px;
+        height: 420px;
+    }
+    .ticket-image {
+        height: 220px;
+        width: 220px;
+        display: block;
+        margin: 20px auto
+    }
+    .ticket-info button {
+        margin-bottom: 15px
+    }
+    .ticket-info {
+        font-size: 20px;
+        line-height: 30px
+    }
+
+    .ticket-info button {
+        padding: 7px;
+    }
+    .store-header-content {
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+    .store-header-video {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .store-header-text {
+        margin: 40px auto;
+        text-align: center
+    }
+    .store-header {
+        height: 100vh;
+    }
+    .store-header-container { 
+        transform: translateY(70px)
+    }
+}
+
+@media (max-width: 600px) {
+    .store-header-text {
+        transform: scale(.8)
+    }
+    .store-header-text p {
+        font-size: 21px
+    }
+    .store-header-text {
+        margin: 20px auto;
+    }
+}
